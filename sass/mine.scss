@@ -1,0 +1,57 @@
+@import 'base';
+
+form {
+	width: 85%;
+	margin: auto;
+	label {
+		float: left;
+		clear: left;
+		padding-right: 10px;
+		text-align: right;
+		width: 10%
+	}
+	
+	input[type="text"] {
+		float: left;
+		clear: right;
+		width: 75px;	
+	}
+	
+	input[type="password"] {
+		float: left;
+		clear: right;
+		width: 100px;	
+	}
+	
+	button {
+		float: left;
+		clear: both;
+		margin-left: 30%;
+	}
+}
+
+#zoomDiv {
+	height: 150px;
+	width: 100%;
+	padding-top: 10px;
+}
+
+.message {
+	font-style: italic;
+	font-size: 0.9em;
+	font-family: Helvetica, sans-serif;
+	clear: both;
+	float: left;
+	margin-left: 10%	
+}
+
+.failure {
+	@extend .message;
+	color: red;
+	font-weight: bold;
+}
+
+.success {
+	@extend .message;
+	color: green;
+}

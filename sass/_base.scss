@@ -1,0 +1,22 @@
+$main-width: 75%;
+$font-style: Helvetica, sans-serif;
+
+.mainDiv {
+	font-family: $font-style;
+	width: $main-width;
+	margin: auto;
+	padding-bottom: 15px;
+	ul {
+		li {
+			list-style-type: none;	
+		}
+	}
+
+	#zoomDiv {
+		font-size: 0.75em;
+	}	
+}
+
+h2 {
+	text-align: center;
+}

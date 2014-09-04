@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Mobile Ready Example</title>
+		<link rel="stylesheet" href="stylesheets/mine.css" media="screen and (min-width: 800px)" /> 
+		<link rel="stylesheet" href="stylesheets/mobile.css" media="screen and (max-device-width: 480px)" />
+		<link rel="stylesheet" href="stylesheets/landscape.css" media="all and (orientation:landscape)" />
+		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<h2>Mobile Ready Example Page</h2>
+		<div class="mainDiv">
+			This is the main div for the page. Filler to be removed later.
+			<div id="zoomDiv">
+				This is some text that I want to zoom. I wrote it specifically to be smaller than the regular text because I thought that would be helpful. Let's see if the mobile permutation works like it's supposed to.
+			</div>
+		</div>
+		<div class="formDiv">
+			<form id="myForm">
+				<label>Name:</label><input type="text" /><br />
+				<label>Colors:</label><input type="text" id="txtColors" /><br />
+				<label>Password:</label><input type="password" /><br />
+				<button id="btnAction">Action</button><br />
+			</form><br />
+			<span id="msgSpan" class="message"></span>
+		</div>
+		<script type="text/javascript">
+			var msgSpan = $("#msgSpan");
+			var btnAction = $("#btnAction");
+
+			btnAction.click(function() {
+				var colors = $("#txtColors").val();
+			
+				if (colors.length <= 5)
+				{
+					msgSpan.html("You did a good job.");
+					msgSpan.addClass("success");
+				} else {
+					msgSpan.html("You did something wrong!");
+					msgSpan.addClass("failure");
+				} 
+				return false;
+			});
+			msgSpan.html("Text!");	
+		</script>
+	</body>
+</html>
