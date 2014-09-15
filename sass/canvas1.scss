@@ -1,0 +1,59 @@
+$font-style: Helvetica, sans-serif;
+
+.js {
+	font-family: $font-style;
+	&[role="navigation"] {
+		margin-left: -100%;
+		float: left;
+	}
+
+	&[role="main"] {
+		margin-left: 0;
+		float: left;
+	}
+
+	&[role="complementary"] {
+		margin-right: -200%;
+		float: left;
+	}
+}
+
+.active-nav {
+
+	&[role="navigation"] {
+		margin-left: 0;
+		width: 80%;
+	}
+
+	&[role="main"] {
+		margin-right: -100%;
+	}
+
+	&[role="complementary"] {
+		margin-right: -100%;
+		float: right;
+	}
+}
+
+.active-sidebar {
+	&[role="navigation"] {
+		margin-left: -100%;
+	}
+	
+	&[role="main"] {
+		margin-left: -90%;
+	}
+
+	&[role="complementary"] {
+		margin-left: 0;
+		width: 80%;
+	}
+}
+
+[role="navigation"],
+[role="main"],
+[role="complementary"] {
+    transition: .2s all ease;
+    width: 90%;
+    padding: 5%;
+}

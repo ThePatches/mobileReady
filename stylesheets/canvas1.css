@@ -1,0 +1,57 @@
+/* line 3, ../sass/canvas1.scss */
+.js {
+  font-family: Helvetica, sans-serif;
+}
+/* line 5, ../sass/canvas1.scss */
+.js[role="navigation"] {
+  margin-left: -100%;
+  float: left;
+}
+/* line 10, ../sass/canvas1.scss */
+.js[role="main"] {
+  margin-left: 0;
+  float: left;
+}
+/* line 15, ../sass/canvas1.scss */
+.js[role="complementary"] {
+  margin-right: -200%;
+  float: left;
+}
+
+/* line 23, ../sass/canvas1.scss */
+.active-nav[role="navigation"] {
+  margin-left: 0;
+  width: 80%;
+}
+/* line 28, ../sass/canvas1.scss */
+.active-nav[role="main"] {
+  margin-right: -100%;
+}
+/* line 32, ../sass/canvas1.scss */
+.active-nav[role="complementary"] {
+  margin-right: -100%;
+  float: right;
+}
+
+/* line 39, ../sass/canvas1.scss */
+.active-sidebar[role="navigation"] {
+  margin-left: -100%;
+}
+/* line 43, ../sass/canvas1.scss */
+.active-sidebar[role="main"] {
+  margin-left: -90%;
+}
+/* line 47, ../sass/canvas1.scss */
+.active-sidebar[role="complementary"] {
+  margin-left: 0;
+  width: 80%;
+}
+
+/* line 53, ../sass/canvas1.scss */
+[role="navigation"],
+[role="main"],
+[role="complementary"] {
+  transition: .2s all ease;
+  width: 90%;
+  padding: 5%;
+}

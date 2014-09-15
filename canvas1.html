@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Nav Canvas Example</title>
+		<link rel="stylesheet" href="stylesheets/canvas1.css" />
+		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div class="js" role="navigation">One</div>
+		<div class="js" role="main">Two<br />
+			<button id="navClick">Nav</button><br />
+			<button id="bodyClick">Body</button><br />
+			<button id="sidebarClick">Sidebar</button><br />
+		</div>
+		<div class="js" role="complementary">Three
+			<br />
+			<button id="bodyClick2">Return to Body</button>
+		</div>
+
+		<script type="text/javascript">
+			var btnNav = $("#navClick");
+			var btnBody = $("#bodyClick");
+			var btnSideBar = $("#sidebarClick");
+
+			function returnToBody() {
+				$("div[role]").each(function() {
+					//$(this).removeClass("js");
+					if ($(this).hasClass("active-nav"))
+						$(this).removeClass("active-nav");
+
+					if ($(this).hasClass("active-sidebar"))
+						$(this).removeClass("active-sidebar");
+				});
+			}
+
+			btnNav.click(function() {
+				$("div[role]").each(function() {
+					//$(this).removeClass("js");
+					$(this).addClass("active-nav");
+				});
+			});
+
+			btnBody.click(returnToBody);
+			btnSideBody.click(returnToBody);
+
+			btnSideBar.click(function() {
+				$("div[role]").each(function() {
+					//$(this).removeClass("js");
+					if ($(this).hasClass("active-nav"))
+						$(this).removeClass("active-nav");
+
+					$(this).addClass("active-sidebar");
+
+				});
+
+			});		
+		</script>
+	</body>
+</html>
