@@ -1,0 +1,44 @@
+@import 'base';
+
+.cards-div {
+	width: $main-width;
+	background-color: lightgrey;
+	color: blue;
+	font-weight: bold;
+	margin: auto;
+	height: 400px;
+}
+
+.card {
+	float: left;
+	margin: 5px 5px 5px 5px;
+	padding: 3px 3px 3px 3px;
+	background-color: white;
+	color: orange;
+	font-family: $font-style;
+	width: 30%; // This can be changed to suit the particular view implementation
+
+	
+	div.title {
+		border-bottom: 1px solid black;
+		margin-bottom: 2px;
+		height: 1.1em;
+		span.customer {
+			float: left;
+			clear: left;
+		}
+		
+		span.client {
+			float: right;
+			clear: right;
+		}
+	}
+	
+	div.content {
+		height: 100px;
+		color: black;
+		font-weight: normal;
+		font-style: italic;
+		overflow-y: hidden;
+	}
+}

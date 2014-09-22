@@ -1,0 +1,66 @@
+/* line 4, ../sass/_base.scss */
+.mainDiv {
+  font-family: Helvetica, sans-serif;
+  width: 75%;
+  margin: auto;
+  padding-bottom: 15px;
+}
+/* line 10, ../sass/_base.scss */
+.mainDiv ul li {
+  list-style-type: none;
+}
+/* line 15, ../sass/_base.scss */
+.mainDiv #zoomDiv {
+  font-size: 0.75em;
+}
+
+/* line 20, ../sass/_base.scss */
+h2 {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 3, ../sass/cards.scss */
+.cards-div {
+  width: 75%;
+  background-color: lightgrey;
+  color: blue;
+  font-weight: bold;
+  margin: auto;
+  height: 400px;
+}
+
+/* line 12, ../sass/cards.scss */
+.card {
+  float: left;
+  margin: 5px 5px 5px 5px;
+  padding: 3px 3px 3px 3px;
+  background-color: white;
+  color: orange;
+  font-family: Helvetica, sans-serif;
+  width: 30%;
+}
+/* line 22, ../sass/cards.scss */
+.card div.title {
+  border-bottom: 1px solid black;
+  margin-bottom: 2px;
+  height: 1.1em;
+}
+/* line 26, ../sass/cards.scss */
+.card div.title span.customer {
+  float: left;
+  clear: left;
+}
+/* line 31, ../sass/cards.scss */
+.card div.title span.client {
+  float: right;
+  clear: right;
+}
+/* line 37, ../sass/cards.scss */
+.card div.content {
+  height: 100px;
+  color: black;
+  font-weight: normal;
+  font-style: italic;
+  overflow-y: hidden;
+}
