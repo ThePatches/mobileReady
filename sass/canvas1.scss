@@ -10,6 +10,10 @@ $font-style: Helvetica, sans-serif;
 	&[role="main"] {
 		margin-left: 0;
 		float: left;
+		ol {
+			height: 300px;
+			overflow-y: scroll;
+		}
 	}
 
 	&[role="complementary"] {
@@ -23,10 +27,15 @@ $font-style: Helvetica, sans-serif;
 	&[role="navigation"] {
 		margin-left: 0;
 		width: 80%;
+		color: red;
+		font-weight: bold;
 	}
 
 	&[role="main"] {
 		margin-right: -100%;
+		ol {
+			overflow-y: hidden;
+		}
 	}
 
 	&[role="complementary"] {
@@ -42,6 +51,9 @@ $font-style: Helvetica, sans-serif;
 	
 	&[role="main"] {
 		margin-left: -90%;
+		ol {
+			overflow-y: hidden;
+		}
 	}
 
 	&[role="complementary"] {

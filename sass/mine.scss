@@ -54,4 +54,5 @@ form {
 .success {
 	@extend .message;
 	color: green;
+	font-weight: bold;
 }

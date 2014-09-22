@@ -12,42 +12,57 @@
   margin-left: 0;
   float: left;
 }
-/* line 15, ../sass/canvas1.scss */
+/* line 13, ../sass/canvas1.scss */
+.js[role="main"] ol {
+  height: 300px;
+  overflow-y: scroll;
+}
+/* line 19, ../sass/canvas1.scss */
 .js[role="complementary"] {
   margin-right: -200%;
   float: left;
 }
 
-/* line 23, ../sass/canvas1.scss */
+/* line 27, ../sass/canvas1.scss */
 .active-nav[role="navigation"] {
   margin-left: 0;
   width: 80%;
+  color: red;
+  font-weight: bold;
 }
-/* line 28, ../sass/canvas1.scss */
+/* line 34, ../sass/canvas1.scss */
 .active-nav[role="main"] {
   margin-right: -100%;
 }
-/* line 32, ../sass/canvas1.scss */
+/* line 36, ../sass/canvas1.scss */
+.active-nav[role="main"] ol {
+  overflow-y: hidden;
+}
+/* line 41, ../sass/canvas1.scss */
 .active-nav[role="complementary"] {
   margin-right: -100%;
   float: right;
 }
 
-/* line 39, ../sass/canvas1.scss */
+/* line 48, ../sass/canvas1.scss */
 .active-sidebar[role="navigation"] {
   margin-left: -100%;
 }
-/* line 43, ../sass/canvas1.scss */
+/* line 52, ../sass/canvas1.scss */
 .active-sidebar[role="main"] {
   margin-left: -90%;
 }
-/* line 47, ../sass/canvas1.scss */
+/* line 54, ../sass/canvas1.scss */
+.active-sidebar[role="main"] ol {
+  overflow-y: hidden;
+}
+/* line 59, ../sass/canvas1.scss */
 .active-sidebar[role="complementary"] {
   margin-left: 0;
   width: 80%;
 }
 
-/* line 53, ../sass/canvas1.scss */
+/* line 65, ../sass/canvas1.scss */
 [role="navigation"],
 [role="main"],
 [role="complementary"] {

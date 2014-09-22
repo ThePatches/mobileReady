@@ -77,4 +77,5 @@ form button {
 /* line 54, ../sass/mine.scss */
 .success {
   color: green;
+  font-weight: bold;
 }

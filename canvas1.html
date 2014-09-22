@@ -6,7 +6,9 @@
 	</head>
 	<body>
 		<div class="js" role="navigation">One</div>
-		<div class="js" role="main">Two<br />
+		<div class="js" role="main">
+			<ol id="placeholder"></ol>
+			Two<br />
 			<button id="navClick">Nav</button><br />
 			<button id="bodyClick">Body</button><br />
 			<button id="sidebarClick">Sidebar</button><br />
@@ -20,6 +22,9 @@
 			var btnNav = $("#navClick");
 			var btnBody = $("#bodyClick");
 			var btnSideBar = $("#sidebarClick");
+			var btnSideBody = $("#bodyClick2");
+			var placeholder = $("#placeholder");
+			var maxSize = 50;
 
 			function returnToBody() {
 				$("div[role]").each(function() {
@@ -52,7 +57,11 @@
 
 				});
 
-			});		
+			});
+
+			for (var i = 0; i < 50; i++) {
+				placeholder.append("<li>Test</li>");	
+			}
 		</script>
 	</body>
 </html>
